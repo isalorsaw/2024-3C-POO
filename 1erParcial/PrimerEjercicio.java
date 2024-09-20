@@ -10,6 +10,7 @@ public class PrimerEjercicio
         int numero1=0;
         int numero2=0;
         int suma=0;
+        String salida="";
         
         //Entradas
         String entrada=JOptionPane.showInputDialog("Ingrese el Primer Numero");
@@ -22,7 +23,7 @@ public class PrimerEjercicio
         suma=numero1+numero2;
         
         //String salida= numero1  +   "+"   + numero2   +   "="   + suma;
-        String salida="La Suma de "+numero1+" y "+numero2+" es: "+suma;
+        salida="La Suma de "+numero1+" y "+numero2+" es: "+suma;
 
         //Salida
         //String salida="La Suma de los dos Numeros es: "+suma;
