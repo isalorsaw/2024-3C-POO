@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=IntroValidacion
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=mensaje
+comment2.target=int\ pedirNumero(java.lang.String)
+comment3.params=mensaje
+comment3.target=double\ pedirDecimal(java.lang.String)
+comment4.params=cadena
+comment4.target=void\ mostrar(java.lang.String)
+comment5.params=mensaje\ ventana\ icono
+comment5.target=void\ mostrar(java.lang.String,\ java.lang.String,\ int)
+numComments=6

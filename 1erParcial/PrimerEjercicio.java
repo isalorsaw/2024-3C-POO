@@ -10,7 +10,7 @@ public class PrimerEjercicio
         int numero1=0;
         int numero2=0;
         int suma=0;
-        String salida="";
+        String salida="";//Variable de Cadena inicializar con cadena vacia
         
         //Entradas
         String entrada=JOptionPane.showInputDialog("Ingrese el Primer Numero");
