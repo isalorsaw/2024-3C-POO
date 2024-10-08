@@ -4,15 +4,43 @@ public class BancoFM
     public static int pedirNumero(String mensaje)//Funcion
     {
         int numero=0;
-        String entrada=JOptionPane.showInputDialog(mensaje);
-        numero=Integer.parseInt(entrada);
+        boolean seguir=true;//Puede ser tambien false
+        
+        do
+        {
+                            try
+                            {
+                                String entrada=JOptionPane.showInputDialog(mensaje);//6
+                                numero=Integer.parseInt(entrada);
+                                seguir=false;
+                            }
+                            catch(Exception e)
+                            {
+                                mostrar("Error al ingresar un entero ");
+                                System.out.println(e);
+                            }
+        }while(seguir==true);
         return numero;
     }
     public static double pedirDecimal(String mensaje)//Funcion
     {
         double numero=0;
-        String entrada=JOptionPane.showInputDialog(mensaje);
-        numero=Double.parseDouble(entrada);
+        boolean seguir=true;//Puede ser tambien false
+        
+        do
+        {
+                            try
+                            {
+                                String entrada=JOptionPane.showInputDialog(mensaje);//6
+                                numero=Double.parseDouble(entrada);
+                                seguir=false;
+                            }
+                            catch(Exception e)
+                            {
+                                mostrar("Error al ingresar un entero ");
+                                System.out.println(e);
+                            }
+        }while(seguir==true);
         return numero;
     }
     public static void mostrar(String cadena)//Metodo
