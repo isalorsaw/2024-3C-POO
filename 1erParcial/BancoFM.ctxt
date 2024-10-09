@@ -1,11 +1,17 @@
 #BlueJ class context
 comment0.target=BancoFM
-comment1.params=mensaje
-comment1.target=int\ pedirNumero(java.lang.String)
-comment2.params=mensaje
-comment2.target=double\ pedirDecimal(java.lang.String)
-comment3.params=cadena
-comment3.target=void\ mostrar(java.lang.String)
-comment4.params=mensaje\ ventana\ icono
-comment4.target=void\ mostrar(java.lang.String,\ java.lang.String,\ int)
-numComments=5
+comment1.params=a\ valor
+comment1.target=void\ llenarArreglo(int[],\ int)
+comment2.params=a
+comment2.target=void\ llenarArreglo(int[])
+comment3.params=a
+comment3.target=void\ imprimir(int[])
+comment4.params=mensaje
+comment4.target=int\ pedirNumero(java.lang.String)
+comment5.params=mensaje
+comment5.target=double\ pedirDecimal(java.lang.String)
+comment6.params=cadena
+comment6.target=void\ mostrar(java.lang.String)
+comment7.params=mensaje\ ventana\ icono
+comment7.target=void\ mostrar(java.lang.String,\ java.lang.String,\ int)
+numComments=8
