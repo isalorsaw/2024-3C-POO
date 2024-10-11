@@ -17,6 +17,19 @@ public class BancoFM
             a[i]=pedirNumero("Ingrese un Numero");
         }
     }
+    //Metodo llenar un arreglo de forma aleatoria
+    public static void llenarAleatorio(int a[], int desde, int hasta)
+    {
+         for(int i=0;i<a.length;i++)
+        {
+            a[i]=generaAleatorio(desde,hasta);
+        }
+    }
+    public static int generaAleatorio(int d, int h)
+    {
+        int alea=((int)(Math.random()*(h-d+1)+d));
+        return alea;
+    }
     //Metodo que imprimir los elementos de un arreglo.
     public static void imprimir(int a[])
     {
@@ -28,6 +41,19 @@ public class BancoFM
             i++;
         }
         mostrar(cadena);
+    }
+    //Funcion que retorna una cadena con todos los elementos del arreglo
+    public static String imprimirF(int a[])
+    {
+        String cadena="";
+        int i=0;
+        while(i<a.length)
+        {
+            cadena+=a[i]+" ";
+            i++;
+        }
+        
+        return cadena;
     }
     public static int pedirNumero(String mensaje)//Funcion
     {
