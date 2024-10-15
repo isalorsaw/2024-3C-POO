@@ -55,6 +55,18 @@ public class BancoFM
         
         return cadena;
     }
+    //Funcion que retorna la suma de todos los elementos del arreglo
+    public static int suma(int a[])
+    {
+        int suma=0;
+        int i=0;
+        while(i<a.length)
+        {
+            suma=suma+a[i];
+            i++;
+        }
+        return suma;
+    }
     public static int pedirNumero(String mensaje)//Funcion
     {
         int numero=0;
@@ -71,7 +83,7 @@ public class BancoFM
             catch(Exception e)
             {
                 mostrar("Error al ingresar un entero ");
-                System.out.println(e);
+                //System.out.println(e);
             }
         }while(seguir==true);
         return numero;
