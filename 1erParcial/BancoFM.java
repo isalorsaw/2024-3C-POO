@@ -1,6 +1,57 @@
 import javax.swing.JOptionPane;
 public class BancoFM
 {
+    //Funcion que retorna el promedio del arreglo
+    public static double promedio(int a[])
+    {
+        return (double)suma(a)/a.length;
+    }
+    //Funcion que pide una posicion y la retorna ya validada
+    public static int pedirPosicion(int a[])
+    {
+        int p=0;
+        
+        do
+        {
+            p=pedirNumero("Ingrese una Posicion del Arreglo");
+        }while(p<=0||p>a.length);
+        return p;
+    }
+    //Metodo que reemplaza dos valores de posiciones en el arreglo
+    public static void reemplazar(int a[], int po, int pd)
+    {
+        int valor_dest=a[pd-1];
+        int valor_origen=a[po-1];
+        a[pd-1]=valor_origen;
+        a[po-1]=valor_dest;
+    }
+    //Funcion que retorna la suma de todos los elementos del arreglo
+    public static int suma(int a[])
+    {
+        int suma=0;
+        int i=0;
+        //1,2,3,4,5
+        //suma=15
+        while(i<a.length)
+        {
+            //if(a[i]<10)
+            suma=suma+a[i];
+            i++;
+        }
+        return suma;
+    }
+    //Funcion qure recibe un arreglo y un valor y devuelve cuantas veces esta en el arreglo
+    public static int contar(int a[], int v)
+    {
+        int c=0;
+        int i=0;
+        while(i<a.length)
+        {
+            if(v==a[i])c=c+1;//c=c+1;
+            i++;
+        }
+        return c;
+    }
     //Metodo que rellenar un arreglo con un valor
     public static void llenarArreglo(int a[], int valor)
     {
@@ -54,18 +105,6 @@ public class BancoFM
         }
         
         return cadena;
-    }
-    //Funcion que retorna la suma de todos los elementos del arreglo
-    public static int suma(int a[])
-    {
-        int suma=0;
-        int i=0;
-        while(i<a.length)
-        {
-            suma=suma+a[i];
-            i++;
-        }
-        return suma;
     }
     public static int pedirNumero(String mensaje)//Funcion
     {
