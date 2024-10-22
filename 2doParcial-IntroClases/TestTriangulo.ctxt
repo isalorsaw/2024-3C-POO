@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=TestTriangulo
+comment0.text=Pedir\ los\ datos\ de\ un\ triangulo\ y\ calcular\ su\ area\r\nSe\ debera\ pedir\ base\ y\ altura
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2
