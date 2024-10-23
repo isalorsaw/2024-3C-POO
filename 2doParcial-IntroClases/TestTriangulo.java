@@ -21,7 +21,7 @@
            //Triangulo t2=new Triangulo("Otro Triangulo",10,20);
            //BancoFM.mostrar(t2+"");
            
-           Triangulo arreglo[]=new Triangulo[5];//Pendiente Manana 22
+           //Triangulo arreglo[]=new Triangulo[5];//Pendiente Manana 22
            
            
        }

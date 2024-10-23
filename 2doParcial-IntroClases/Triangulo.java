@@ -1,29 +1,43 @@
-public class Triangulo
+public class Triangulo extends Figura
 {
     //Atributos (Variables-Datos del Triangulo)
     int base;
     int altura;
-    String titulo;
-    
+    //String titulo;
+    //Constructor Vacio
+    public Triangulo()
+    {
+        super();
+        this.base=0;
+        this.altura=0;
+    }
     //Constructor
     public Triangulo(int base, int altura)
     {
+        super(0,0);//Constructor int,int
+        
         this.base=base;
         this.altura=altura;
-        this.titulo="";
+        //this.titulo="";
     }
-    public Triangulo(String titulo,int base, int altura)
+    public Triangulo(int x, int y, int base, int altura, String nombre)
     {
+        super(x,y,nombre);
         this.base=base;
         this.altura=altura;
-        this.titulo=titulo;
+    }
+    /*public Triangulo(String titulo,int base, int altura)
+    {
+        super(0,0);
+        this.base=base;
+        this.altura=altura;
+        //this.titulo=titulo;
     }
     public Triangulo()
     {
         
-    }
+    }*/
 
-    
     //Funcion
     public int area()
     {
@@ -34,7 +48,8 @@ public class Triangulo
     //Funcion
     public String toString()
     {
-        return titulo+"\nBase: "+base+" Altura: "+altura+" Area: "+area();
+        //return titulo+"\nBase: "+base+" Altura: "+altura+" Area: "+area();
+        return super.toString()+" Base: "+base+" Altura: "+altura+" Area: "+area();
     }
     //public void duplicar()//Metodo
     //public int pedirNumero()//Funcion
