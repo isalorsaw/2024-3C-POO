@@ -1,3 +1,4 @@
+import javax.swing.JOptionPane;
 public class Figura
 {
     int x;//Coordenadas x,y
@@ -10,6 +11,8 @@ public class Figura
         this.x=0;
         this.y=0;
         this.nombre="";
+        
+        this.nombre=JOptionPane.showInputDialog("Ingrese el Nombre de la Figura");
     }
     //Constructor con parametros int,int
     public Figura(int x, int y)

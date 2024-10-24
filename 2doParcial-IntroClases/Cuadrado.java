@@ -7,6 +7,8 @@ public class Cuadrado extends Figura
     {
         super();
         this.lado=0;
+        
+        this.lado=BancoFM.pedirNumero("Ingrese el Lado del Cuadrado");
     }
     public Cuadrado(int x, int y, int lado, String nombre)
     {
