@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Figura
+comment1.params=
+comment1.target=Figura()
+comment2.params=x\ y
+comment2.target=Figura(int,\ int)
+comment3.params=x\ y\ nombre
+comment3.target=Figura(int,\ int,\ java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5

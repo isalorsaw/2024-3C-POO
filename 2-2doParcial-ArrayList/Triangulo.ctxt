@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Triangulo
+comment1.params=
+comment1.target=Triangulo()
+comment2.params=base\ altura
+comment2.target=Triangulo(int,\ int)
+comment3.params=x\ y\ base\ altura\ nombre
+comment3.target=Triangulo(int,\ int,\ int,\ int,\ java.lang.String)
+comment4.params=
+comment4.target=int\ area()
+comment4.text=public\ Triangulo(String\ titulo,int\ base,\ int\ altura)\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ super(0,0);\r\n\ \ \ \ \ \ \ \ this.base\=base;\r\n\ \ \ \ \ \ \ \ this.altura\=altura;\r\n\ \ \ \ \ \ \ \ //this.titulo\=titulo;\r\n\ \ \ \ }\r\n\ \ \ \ public\ Triangulo()\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ \r\n}
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6

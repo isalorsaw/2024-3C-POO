@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=TestFigura
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=f
+comment2.target=void\ imprimir(Figura[])
+numComments=3
