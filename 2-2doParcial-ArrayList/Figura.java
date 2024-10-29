@@ -28,6 +28,26 @@ public class Figura
         this.y=y;
         this.nombre=nombre;
     }
+    public boolean equals(String otra)
+    {
+        //this.nombre==otra.nombre;
+        //OJO
+        //boolean b=this.nombre.equals(otra);
+        
+        //boolean b=this.nombre.equalsIgnoreCase(otra);
+        //return b;
+        
+        //if(this.nombre.equalsIgnoreCase(otra)==true)return true;
+        //else return false;
+        
+        //return (this.nombre.equalsIgnoreCase(otra)?true:false);
+        
+        return this.nombre.equalsIgnoreCase(otra);
+    }
+    public void modificar()
+    {
+        
+    }
     public String toString()
     {
         return nombre+" X "+x+" Y "+y;

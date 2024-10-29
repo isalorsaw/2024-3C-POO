@@ -20,6 +20,10 @@ public class Cuadrado extends Figura
         super();
         this.lado=lado;
     }
+    public void modificar()
+    {
+        this.lado=BancoFM.pedirNumero("Ingrese el Lado ("+this.lado+")");
+    }
     public int area()
     {
         return lado*lado;

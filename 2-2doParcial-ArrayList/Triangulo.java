@@ -29,6 +29,11 @@ public class Triangulo extends Figura
         this.base=base;
         this.altura=altura;
     }
+    public void modificar()
+    {
+        this.base=BancoFM.pedirNumero("Ingrese la Base ("+this.base+")");
+        this.altura=BancoFM.pedirNumero("Ingrese la Altura ("+this.altura+")");
+    }
     /*public Triangulo(String titulo,int base, int altura)
     {
         super(0,0);

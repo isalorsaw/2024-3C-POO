@@ -222,4 +222,27 @@ public class BancoFM
     {
         JOptionPane.showMessageDialog(null,mensaje,ventana,icono);
     }
+    public static String pedirCadena(String msg)
+    {
+        String c="";
+        boolean seguir=true;
+        do
+        {
+            try
+            {
+                c=JOptionPane.showInputDialog(msg);
+                if(c.length()>0)seguir=false;
+            }
+            catch(Exception exp)
+            {
+                mostrar("Error al ingresar un entero ");
+            }
+        }while(seguir);
+        return c;
+    }
+    public boolean comparar(String s1, String s2)
+    {
+        return s1.equals(s2);
+        //return s1==s2;
+    }
 }
