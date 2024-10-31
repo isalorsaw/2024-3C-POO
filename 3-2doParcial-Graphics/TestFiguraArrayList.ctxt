@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=TestFiguraArrayList
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=nfig
+comment2.target=Figura\ buscarArrayList(java.lang.String)
+comment3.params=
+comment3.target=void\ imprimirLista()
+numComments=4
