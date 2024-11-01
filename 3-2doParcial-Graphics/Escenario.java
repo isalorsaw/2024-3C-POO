@@ -26,7 +26,7 @@ public class Escenario extends JPanel
         
         g.drawString("Elaborado por: Ing Isaias Salinas",10,500);
         c.dibuja(g);
-        g.drawString(c.toString(),c.getX(),c.getY());
+        //g.drawString(c.toString(),c.getX(),c.getY());
         dibujarFiguras(g);
     }
     public void inicializarFiguras()

@@ -29,14 +29,14 @@ public class Figura
         this.y=y;
         this.nombre=nombre;
     }
-    public int getX()
+    /*public int getX()
     {
         return this.x;
     }
     public int getY()
     {
         return this.y;
-    }
+    }*/
     public boolean equals(String otra)
     {
         //this.nombre==otra.nombre;
