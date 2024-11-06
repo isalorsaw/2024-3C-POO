@@ -33,8 +33,8 @@ public class Cuadrado extends Figura
     {
         return super.toString()+" Lado "+lado+" Area: "+area();
     }
-    public void dibuja(Graphics g)
-    {
-        g.drawRect(x,y,lado,lado);
-    }
+        public void dibuja(Graphics g)
+        {
+            g.drawRect(x,y,lado,lado);
+        }
 }
