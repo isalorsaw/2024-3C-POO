@@ -6,6 +6,6 @@ comment2.params=g
 comment2.target=void\ dibuja(java.awt.Graphics)
 comment3.params=
 comment3.target=boolean\ choque()
-comment4.params=l
+comment4.params=dir
 comment4.target=void\ mover(char)
 numComments=5

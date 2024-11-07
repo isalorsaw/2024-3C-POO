@@ -2,7 +2,12 @@ import javax.swing.JPanel;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.util.ArrayList;
-public class Escenario extends JPanel
+//Librerias para Eventos
+import java.awt.event.KeyListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseEvent;
+public class Escenario extends JPanel implements KeyListener//Implementar los eventos de tecla
 {
     Fondo f;
     Lancha l;
@@ -17,8 +22,34 @@ public class Escenario extends JPanel
         this.setBackground(Color.WHITE);//Color de Fondo
         this.setFocusable(true);//Vuelve Prioridad el Panel en el JFrame
         this.setVisible(true);
+        this.addKeyListener(this);
         this.setSize(f.ancho,f.alto);
     }
+    public void keyPressed(KeyEvent evento)
+    {
+        int code=evento.getKeyCode();
+        System.out.println("Codigo de Tecla "+code);
+        
+        char dir=' ';
+        if(code==39)l.mover('r');
+        
+        if(code==83)l.velocidad+=5;
+        
+        repaint();
+        
+        //System.out.println("Display "+l.x+" "+l.y);
+        
+        /*if(code==40)//Down-Abajo
+        else if(code==38)//up-Arriba
+        else if(code==39)//right-derecha
+        else if(code==37)//left-izq*/
+        
+        
+        
+    }//Al presionar una tecla
+    public void keyReleased(KeyEvent evento){}//Al soltar una tecla
+    public void keyTyped(KeyEvent evento){}//Al presionar una tecla
+    
     public void inicializarLanchas()
     {
         int i=0;
@@ -45,7 +76,8 @@ public class Escenario extends JPanel
     {
         int x=BancoFM.generaAleatorio(10,900);
         int y=BancoFM.generaAleatorio(400,460);
-        l= new Lancha(x,y,"imagenes/lancha.png");
+        l= new Lancha(x,y,"imagenes/yate.png");
+        //l= new Lancha(950,500,"imagenes/lancha.png");
     }
     public void paint(Graphics g)
     {
