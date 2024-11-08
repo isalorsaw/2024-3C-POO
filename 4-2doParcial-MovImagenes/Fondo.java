@@ -9,8 +9,8 @@ public class Fondo extends Coordenada
     {
         g.drawImage(imagen,x,y,null);
     }
-    public void cambiar()
+    /*public void cambiar()
     {
         
-    }
+    }*/
 }

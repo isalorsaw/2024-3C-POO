@@ -4,6 +4,4 @@ comment1.params=x\ y\ ruta
 comment1.target=Fondo(int,\ int,\ java.lang.String)
 comment2.params=g
 comment2.target=void\ dibuja(java.awt.Graphics)
-comment3.params=
-comment3.target=void\ cambiar()
-numComments=4
+numComments=3

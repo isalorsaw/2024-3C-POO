@@ -19,7 +19,7 @@ public class Lancha extends Coordenada
     {
         if(dir=='u')//up=arriba
         {
-            
+            //y--;
         }
         else if(dir=='d')//down=abajo
         {
