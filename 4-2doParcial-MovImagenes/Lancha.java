@@ -2,10 +2,12 @@ import java.awt.Graphics;
 public class Lancha extends Coordenada
 {
     int velocidad;
-    public Lancha(int x, int y, String ruta)
+    Limite l;
+    public Lancha(int x, int y, String ruta, int lx, int ly)
     {
         super(x,y,ruta);
         velocidad=5;
+        l=new Limite(lx,ly);
     }
     public void dibuja(Graphics g)
     {
@@ -15,7 +17,7 @@ public class Lancha extends Coordenada
     {
         return false;
     }
-    public void mover(char dir)
+    public boolean mover(char dir)
     {
         if(dir=='u')//up=arriba
         {
@@ -35,5 +37,9 @@ public class Lancha extends Coordenada
             //x++;
             x=x+velocidad;
         }
+        //BancoFM.mostrar(x+" LimX "+l.x);
+        if(x>l.x)return true;
+        if(y>l.y)return true;
+        else return false;
     }
 }

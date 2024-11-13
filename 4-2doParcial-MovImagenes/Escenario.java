@@ -26,6 +26,7 @@ public class Escenario extends JPanel implements KeyListener//Implementar los ev
         this.setFocusable(true);//Vuelve Prioridad el Panel en el JFrame
         this.setVisible(true);
         this.addKeyListener(this);
+        BancoFM.mostrar(f.ancho+" "+f.alto);
         this.setSize(f.ancho,f.alto);
     }
     public void keyPressed(KeyEvent evento)
@@ -33,12 +34,14 @@ public class Escenario extends JPanel implements KeyListener//Implementar los ev
         int code=evento.getKeyCode();
         System.out.println("Codigo de Tecla "+code);
         
+        boolean limite=false;
         char dir=' ';
-        if(code==39)l.mover('r');
+        if(code==39)limite=l.mover('r');
         
         if(code==83)l.velocidad+=5;
         
-        repaint();
+        System.out.println("Limite "+limite);
+        if(limite==false)repaint();
         
         //System.out.println("Display "+l.x+" "+l.y);
         
@@ -60,7 +63,7 @@ public class Escenario extends JPanel implements KeyListener//Implementar los ev
         {
             int x=BancoFM.generaAleatorio(10,900);
             int y=BancoFM.generaAleatorio(400,550);
-            Lancha ll=new Lancha(x,y,"imagenes/lancha.png");
+            Lancha ll=new Lancha(x,y,"imagenes/lancha.png",f.ancho,f.alto);
             ls.add(ll);
             i++;
         }
@@ -79,7 +82,7 @@ public class Escenario extends JPanel implements KeyListener//Implementar los ev
     {
         int x=BancoFM.generaAleatorio(10,900);
         int y=BancoFM.generaAleatorio(400,460);
-        l= new Lancha(x,y,"imagenes/yate.png");
+        l= new Lancha(x,y,"imagenes/yate.png",f.ancho,f.alto);
         //l= new Lancha(950,500,"imagenes/lancha.png");
     }
     public void paint(Graphics g)
