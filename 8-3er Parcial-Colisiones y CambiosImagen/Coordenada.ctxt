@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Coordenada
+comment1.params=x\ y\ ruta
+comment1.target=Coordenada(int,\ int,\ java.lang.String)
+comment2.params=ruta
+comment2.target=void\ setRuta(java.lang.String)
+comment3.params=
+comment3.target=void\ setRectangle()
+numComments=4

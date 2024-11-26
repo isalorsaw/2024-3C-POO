@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Lancha
+comment1.params=x\ y\ ruta\ lx\ ly
+comment1.target=Lancha(int,\ int,\ java.lang.String,\ int,\ int)
+comment2.params=x\ y\ ruta\ velocidad
+comment2.target=Lancha(int,\ int,\ java.lang.String,\ int)
+comment3.params=
+comment3.target=void\ frenar()
+comment4.params=g
+comment4.target=void\ dibuja(java.awt.Graphics)
+comment5.params=
+comment5.target=java.awt.Rectangle\ getRectangle()
+comment6.params=otro
+comment6.target=boolean\ choque(java.awt.Rectangle)
+comment7.params=dir\ limitex
+comment7.target=boolean\ mover(char,\ int)
+numComments=8
