@@ -34,8 +34,8 @@ public class Escenario extends JPanel implements KeyListener,ActionListener,Mous
         
         //Inclusion de Timer para Mov en Automatico
         t=new Timer(segundos*1000,null);//5 milisegundos
-        //t.addActionListener(this);//Agregando el evento de accion a timer
-        //t.start();//Iniciar el timer
+        t.addActionListener(this);//Agregando el evento de accion a timer
+        t.start();//Iniciar el timer
         
         
         this.setBackground(Color.WHITE);//Color de Fondo
@@ -71,6 +71,8 @@ public class Escenario extends JPanel implements KeyListener,ActionListener,Mous
             cambioDireccion(b,'r');//Pendiente peticion Oscar
             
             moverBalas();
+            
+            l.mover('l',0);
             
             /*if(b==true)
             {
