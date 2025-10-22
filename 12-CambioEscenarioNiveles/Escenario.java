@@ -192,6 +192,7 @@ public class Escenario extends JPanel implements KeyListener,ActionListener,Mous
             BancoFM.mostrar("Salto de Nivel");
             principal.dispose();//Dispose cerrar el formulario
             new Pral(2);
+            f=new Fondo(0,0,"imagenes/noche.png");
         }
     }
 
